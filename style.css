@@ -1,0 +1,169 @@
+:root {
+    --light-clr: #F2F2F2;
+    --white-clr: #fff;
+    --fw-reg: 400;
+    --fw-bold: 700;
+    --fs-big-shoulders: 'Big Shoulders Display', cursive;
+    --fe-lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fe-lexend-deca);
+    display: grid;
+    place-items: center;
+}
+
+/* General */
+
+h2, p {
+    margin: 0;
+}
+
+.card__title {
+    flex-grow: 1;
+    color: var(--light-clr);
+    font-family: var(--fs-big-shoulders);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: .873em;
+}
+
+.card__description {
+    width: 95%;
+    color: var(--white-clr);
+    opacity: .75;
+    font-size: .9375rem;
+    font-weight: var(--fw-reg);
+    line-height: 1.5625rem;
+    margin: 1.66em 0;
+}
+
+.card__icon {
+    align-self: start;
+}
+
+button {
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.learn-more-btn {
+    align-self: flex-start;
+    background: var(--light-clr);
+    font-size: .9375rem;
+    line-height: 1.5625rem;
+    padding: .8em 2.1em;
+    border-radius: 25px;
+}
+
+.learn-more-btn:hover {
+    background: transparent;
+    color: var(--white-clr);
+    outline: 2px solid var(--white-clr);
+}
+
+.sedans-btn {
+    color: #E28625;
+}
+
+.suvs-btn {
+    color: #006971;
+}
+
+.luxury-btn {
+    color: #004140;
+}
+
+/* Layouts */
+
+.device-container {
+    background: var(--bg-clr);
+    width: 100%;
+    height: fit-content;
+    min-width: 375px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5.5em 0 5.5em;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    min-width: 327px;
+    max-width: 920px;
+}
+
+.card--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.sedans-card-bg {
+    background-color: #E28625;
+}
+
+.suvs-card-bg {
+    background-color: #006971;
+}
+
+.luxury-card-bg {
+    background-color: #004140;
+}
+
+/* Footer */
+
+.attribution-section {
+    background: #F2F2F2;
+    opacity: .9;
+    padding: 2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media (min-width: 820px) {
+    .device-container {
+        height: 100vh;
+    }
+
+    .card-section {
+        flex-direction: row;
+        margin: 5em 0;
+    }
+
+    .learn-more-btn {
+        margin-top: 5.19em;
+    }
+}
