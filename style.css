@@ -162,7 +162,6 @@ button {
 
     .card-section {
         flex-direction: row;
-        margin: 5em 0;
     }
 
     .card__description {
