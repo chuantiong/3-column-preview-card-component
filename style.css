@@ -37,6 +37,7 @@ h2, p {
 }
 
 .card__description {
+    flex-basis: 100%;
     width: 95%;
     color: var(--white-clr);
     opacity: .75;
@@ -87,7 +88,7 @@ button {
 /* Layouts */
 
 .device-container {
-    background: var(--bg-clr);
+    background: var(--light-clr);
     width: 100%;
     height: fit-content;
     min-width: 375px;
@@ -163,7 +164,7 @@ button {
         margin: 5em 0;
     }
 
-    .learn-more-btn {
-        margin-top: 5.19em;
+    .card__description {
+        margin-bottom: 5.19em;
     }
 }
