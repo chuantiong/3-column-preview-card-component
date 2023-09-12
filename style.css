@@ -19,6 +19,7 @@ body {
     font-family: var(--fe-lexend-deca);
     display: grid;
     place-items: center;
+    background-color: var(--light-clr);
 }
 
 /* General */
